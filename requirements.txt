@@ -5,3 +5,4 @@ flask-wtf
 joblib==0.14.0
 WTForms==2.2.1
 gunicorn==19.71
+nympy==1.24.3
