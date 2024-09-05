@@ -4,3 +4,4 @@ Flask==1.1.1
 flask-wtf
 joblib==0.14.0
 WTForms==2.2.1
+gunicorn==19.71
