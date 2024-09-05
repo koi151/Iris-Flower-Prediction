@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .list-group-item {
+            font-size: 1.2rem;
+        }
+        .prediction-result {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #28a745; /* Green color for positive result */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Information provided:</h2>
+
+        <ul class="list-group">
+            <li class="list-group-item">Sepal Length: {{ session['SepalLengthCm'] }}</li>
+            <li class="list-group-item">Sepal Width: {{ session['SepalWidthCm'] }}</li>
+            <li class="list-group-item">Petal Length: {{ session['PetalLengthCm'] }}</li>
+            <li class="list-group-item">Petal Width: {{ session['PetalWidthCm'] }}</li>
+        </ul>
+
+        <h2 class="mt-4">Prediction Result: <span class="prediction-result">{{ results }}</span></h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

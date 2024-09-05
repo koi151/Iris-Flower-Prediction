@@ -1,0 +1,6 @@
+pandas==0.25.2
+scikit-learn==0.21.3
+Flask==1.1.1
+flask-wtf
+joblib==0.14.0
+WTForms==2.2.1

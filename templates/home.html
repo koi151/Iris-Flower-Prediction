@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iris Flower Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Iris Flower Prediction</h1>
+
+        <form method="POST">
+            {{ form.hidden_tag() }} 
+
+            <div class="form-group">
+                {{ form.SepalLengthCm.label }} 
+                {{ form.SepalLengthCm(class="form-control") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.SepalWidthCm.label }} 
+                {{ form.SepalWidthCm(class="form-control") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.PetalLengthCm.label }} 
+                {{ form.PetalLengthCm(class="form-control") }}
+            </div>
+
+            <div class="form-group">
+                {{ form.PetalWidthCm.label }} 
+                {{ form.PetalWidthCm(class="form-control") }}
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Predict</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
